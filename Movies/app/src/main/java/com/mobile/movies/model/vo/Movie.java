@@ -16,10 +16,11 @@ public class Movie {
     private int year;
     private boolean isFavorite;
 
-    public Movie(int id, String name, int genre) {
+    public Movie(int id, String name, int genre, int year) {
         this.id = id;
         this.name = name;
         this.genre = genre;
+        this.year = year;
     }
 
     public Movie(int id, String name, int genre, String synopsis, String director, String cast, int country, int year, boolean isFavorite) {

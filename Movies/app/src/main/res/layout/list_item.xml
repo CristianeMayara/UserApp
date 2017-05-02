@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_margin="@dimen/item_layout_margin"
+    android:padding="0dip"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        android:id="@+id/item_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitStart" />
+
+    <ImageView
+        android:id="@+id/item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:src="@mipmap/arrow" />
+
+    <ImageView
+        android:id="@+id/item_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:src="@mipmap/star_empty" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:layout_marginLeft="@dimen/item_txt"
+        android:textColor="@color/blackColor"
+        android:textAllCaps="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_marginLeft="@dimen/item_txt"
+        android:ellipsize="marquee"
+        android:textSize="13sp"
+        android:textColor="@color/lightGrayColor" />
+
+    <TextView
+        android:id="@+id/item_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_year"
+        android:layout_marginLeft="@dimen/item_txt"
+        android:ellipsize="marquee"
+        android:textSize="13sp"
+        android:textColor="@color/lightGrayColor" />
+</RelativeLayout>
