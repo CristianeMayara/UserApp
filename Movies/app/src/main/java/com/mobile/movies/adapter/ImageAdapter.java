@@ -70,12 +70,16 @@ public class ImageAdapter  extends BaseAdapter {
             public boolean onTouch(View arg0, MotionEvent arg1) {
                 switch (arg1.getAction()) {
                     case MotionEvent.ACTION_DOWN: {
-                        removeButton.setBackgroundColor(Color.parseColor("#3F51B5"));
+                        removeButton.setBackgroundColor(Color.parseColor("#1e90ff"));
                         // TODO
                         // call method to remove movie from favorites
                         break;
                     }
                     case MotionEvent.ACTION_UP:{
+                        removeButton.setBackgroundColor(Color.parseColor("#99000000"));
+                        break;
+                    }
+                    case MotionEvent.ACTION_CANCEL:{
                         removeButton.setBackgroundColor(Color.parseColor("#99000000"));
                         break;
                     }
