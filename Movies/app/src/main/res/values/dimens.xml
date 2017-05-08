@@ -12,4 +12,9 @@
     <dimen name="item_vertical_margin">8dp</dimen>
     <dimen name="item_txt">100dp</dimen>
     <dimen name="item_layout_margin">4dp</dimen>
+    <!-- Dimensions for the grid items. -->
+    <dimen name="grid_item_height">130dp</dimen>
+    <dimen name="grid_item_width">130dp</dimen>
+    <dimen name="grid_item_remove_dimens">30dp</dimen>
+
 </resources>

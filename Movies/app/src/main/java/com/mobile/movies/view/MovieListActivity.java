@@ -154,9 +154,14 @@ public class MovieListActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_home) {
+            // TODO
+            // go to home screen
+        } else if (id == R.id.nav_favorites) {
+            // TODO
+            // go to favorites screen
+            Intent i = new Intent(this, FavoritesActivity.class);
+            this.startActivity(i);
 
         } else if (id == R.id.nav_slideshow) {
 

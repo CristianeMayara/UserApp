@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/poster_gridview_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/remove_gridview_item"
+        android:layout_width="@dimen/grid_item_remove_dimens"
+        android:layout_height="@dimen/grid_item_remove_dimens"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparencyColor"
+        android:src="@mipmap/remove_icon"/>
+
+</RelativeLayout>
