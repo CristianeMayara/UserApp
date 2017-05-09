@@ -1,27 +1,17 @@
-package com.mobile.movies.adapter;
+package com.mobile.movies.ui.adapter;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Color;
-import android.graphics.Point;
 import android.util.DisplayMetrics;
-import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.mobile.movies.R;
-
-import java.util.ArrayList;
-
-import static android.support.design.R.id.wrap_content;
 
 /**
  * Created by Cristiane on 02/05/2017.
