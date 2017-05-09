@@ -21,12 +21,14 @@ public class MovieDAO {
     private String[] columns = {
             BaseDAO.MOVIE_ID,
             BaseDAO.MOVIE_NAME,
+            BaseDAO.MOVIE_ORIGINALNAME,
             BaseDAO.MOVIE_GENRE,
             BaseDAO.MOVIE_SYNOPSIS,
             BaseDAO.MOVIE_DIRECTOR,
             BaseDAO.MOVIE_CAST,
             BaseDAO.MOVIE_COUNTRY,
             BaseDAO.MOVIE_YEAR,
+            BaseDAO.MOVIE_RUNTIME,
             BaseDAO.MOVIE_ISFAVORITE
     };
 
@@ -79,12 +81,14 @@ public class MovieDAO {
                 movie = new Movie(
                         c.getInt(c.getColumnIndex(BaseDAO.MOVIE_ID)),
                         c.getString(c.getColumnIndex(BaseDAO.MOVIE_NAME)),
+                        c.getString(c.getColumnIndex(BaseDAO.MOVIE_ORIGINALNAME)),
                         c.getInt(c.getColumnIndex(BaseDAO.MOVIE_GENRE)),
                         c.getString(c.getColumnIndex(BaseDAO.MOVIE_SYNOPSIS)),
                         c.getString(c.getColumnIndex(BaseDAO.MOVIE_DIRECTOR)),
                         c.getString(c.getColumnIndex(BaseDAO.MOVIE_CAST)),
                         c.getInt(c.getColumnIndex(BaseDAO.MOVIE_COUNTRY)),
                         c.getInt(c.getColumnIndex(BaseDAO.MOVIE_YEAR)),
+                        c.getInt(c.getColumnIndex(BaseDAO.MOVIE_RUNTIME)),
                         c.getInt(c.getColumnIndex(BaseDAO.MOVIE_ISFAVORITE)) == 1 ? true : false);
 
                 movieList.add(movie);

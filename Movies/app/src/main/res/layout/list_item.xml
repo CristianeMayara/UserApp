@@ -23,8 +23,8 @@
 
     <ImageView
         android:id="@+id/item_star"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_above="@id/item_arrow"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -39,8 +39,8 @@
         android:layout_marginTop="@dimen/item_vertical_margin"
         android:layout_marginLeft="@dimen/item_txt"
         android:textColor="@color/blackColor"
-        android:textAllCaps="true"
-        android:textSize="16sp" />
+        android:textStyle="bold"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/item_year"
@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/item_name"
         android:layout_marginLeft="@dimen/item_txt"
+        android:layout_marginTop="7dp"
         android:ellipsize="marquee"
         android:textSize="13sp"
         android:textColor="@color/lightGrayColor" />
@@ -57,6 +58,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/item_year"
+        android:layout_marginLeft="@dimen/item_txt"
+        android:ellipsize="marquee"
+        android:textSize="13sp"
+        android:textColor="@color/lightGrayColor" />
+
+    <TextView
+        android:id="@+id/item_cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_genre"
+        android:layout_marginLeft="@dimen/item_txt"
+        android:ellipsize="marquee"
+        android:textSize="13sp"
+        android:textColor="@color/lightGrayColor" />
+
+    <TextView
+        android:id="@+id/item_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_cast"
         android:layout_marginLeft="@dimen/item_txt"
         android:ellipsize="marquee"
         android:textSize="13sp"

@@ -62,11 +62,11 @@ public class MovieListActivity extends AppCompatActivity
         //dao = (new ArticleDAO(this));
         myDataset = new ArrayList<Movie> ();
         //myDataset.addAll(dao.getMovieList());
-        myDataset.add(new Movie(1, "Filme 1", 1, 2016));
-        myDataset.add(new Movie(2, "Filme 2", 2, 2009));
-        myDataset.add(new Movie(3, "Filme 3", 3, 2011));
-        myDataset.add(new Movie(4, "Filme 4", 2, 2012));
-        myDataset.add(new Movie(5, "Filme 5", 1, 2015));
+        myDataset.add(new Movie(1, "Jogos Vorazes", 1, 2016, "Brad Pit", 132));
+        myDataset.add(new Movie(2, "Lucy", 2, 2009, "Angelina Jolie", 121));
+        myDataset.add(new Movie(3, "Sr. e Sra. Smith", 3, 2011, "Brad Pit", 130));
+        myDataset.add(new Movie(4, "O Tigre e o Dragão", 2, 2012, "Scarlett Johansson", 89));
+        myDataset.add(new Movie(5, "Salt", 1, 2015, "Arnold Schwarzenegger", 137));
         mAdapter = new ListAdapter(myDataset);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setClickable(true);

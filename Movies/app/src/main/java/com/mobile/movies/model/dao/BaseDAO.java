@@ -28,12 +28,14 @@ public class BaseDAO extends SQLiteOpenHelper {
     protected static final String MOVIE_TABLE_NAME = "movie";
     protected static final String MOVIE_ID = "id";
     protected static final String MOVIE_NAME = "name";
+    protected static final String MOVIE_ORIGINALNAME = "originalName";
     protected static final String MOVIE_GENRE = "genre";
     protected static final String MOVIE_SYNOPSIS = "synopsis";
     protected static final String MOVIE_DIRECTOR = "director";
     protected static final String MOVIE_CAST = "cast";
     protected static final String MOVIE_COUNTRY = "country";
     protected static final String MOVIE_YEAR = "year";
+    protected static final String MOVIE_RUNTIME = "runtime";
     protected static final String MOVIE_ISFAVORITE = "isFavorite";
 
     protected static final String GENRE_TABLE_NAME = "genre";

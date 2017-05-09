@@ -7,31 +7,37 @@ package com.mobile.movies.model.vo;
 public class Movie {
 
     private int id;
-    private String name;
+    private String brazilianTitle;
+    private String originalTitle;
     private int genre;
     private String synopsis;
     private String director;
     private String cast;
     private int country;
     private int year;
+    private int runtime;
     private boolean isFavorite;
 
-    public Movie(int id, String name, int genre, int year) {
+    public Movie(int id, String brazilianTitle, int genre, int year, String cast, int runtime) {
         this.id = id;
-        this.name = name;
+        this.brazilianTitle = brazilianTitle;
         this.genre = genre;
         this.year = year;
+        this.cast = cast;
+        this.runtime = runtime;
     }
 
-    public Movie(int id, String name, int genre, String synopsis, String director, String cast, int country, int year, boolean isFavorite) {
+    public Movie(int id, String brazilianTitle, String originalTitle, int genre, String synopsis, String director, String cast, int country, int year, int runtime, boolean isFavorite) {
         this.id = id;
-        this.name = name;
+        this.brazilianTitle = brazilianTitle;
+        this.originalTitle = originalTitle;
         this.genre = genre;
         this.synopsis = synopsis;
         this.director = director;
         this.cast = cast;
         this.country = country;
         this.year = year;
+        this.runtime = runtime;
         this.isFavorite = isFavorite;
     }
 
@@ -43,12 +49,20 @@ public class Movie {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getBrazilianTitle() {
+        return brazilianTitle;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBrazilianTitle(String brazilianTitle) {
+        this.brazilianTitle = brazilianTitle;
+    }
+
+    public String getOriginalTitle() {
+        return originalTitle;
+    }
+
+    public void setOriginalTitle(String originalTitle) {
+        this.originalTitle = originalTitle;
     }
 
     public int getGenre() {
@@ -97,6 +111,14 @@ public class Movie {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public int getRuntime() {
+        return runtime;
+    }
+
+    public void setRuntime(int runtime) {
+        this.runtime = runtime;
     }
 
     public boolean isFavorite() {
